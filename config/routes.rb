@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 
-  # get 'post/new'
-  # get 'post/index'
-  # get 'post/show'
+  # get 'posts/new'
+  # get 'posts/index'
+  # get 'posts/show'
 
+  # take us to the homepage which should show all the posts if god is graceful - This is the main page
   root 'posts#index'
+
+  # create posts, see posts, and get all pages
   resources :posts
 
   devise_for :users

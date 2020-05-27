@@ -1,6 +1,11 @@
-<%= image_tag(@post.image.url(:medium)) %>
-<br>
-<%= @post.description %>
-
-
-  
+<div class="container" style="float:left;">
+  <%= link_to "All posts", posts_path, :class => 'btn btn-small btn-default', :style => 'margin-bottom:20px;'%>
+  <div class="row">
+    <div class="col-sm-6">
+      <%= image_tag(@post.image.url(:thumb)) %>
+      <br>
+      <%= @post.description %>
+    </div>
+  </div>
+</div>
+ 

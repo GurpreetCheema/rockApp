@@ -45,6 +45,8 @@ Rails.application.configure do
   # Highlight code that triggered database queries in logs.
   config.active_record.verbose_query_logs = true
 
+  # added paaperclip to dev, called another program image masic type in git bash which convert and it will show like /usr/bin/convert
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 
 # send emails to individual users but it will go to my terminal, like forgot pass
  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
